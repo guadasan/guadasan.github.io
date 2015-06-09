@@ -49,6 +49,8 @@
 </div>
 -->
 
+		  <section id="inicio">
+
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
@@ -97,19 +99,19 @@
                     <article>
                         <h4 >Inicio</h4>
                         <p class="content">Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-					  	<a href="#">más..</a>
+					  	<a id="inicio" href="#">más..</a>
                     </article>
 
                     <article>
                         <h4>Ubicación</h4>
                         <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-					  	<a href="#">más..</a>
+					  	<a id="ubicacion" href="#">más..</a>
                     </article>
 
                     <article>
                         <h4>Sitios de interés</h4>
                         <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-					  	<a href="#">más..</a>
+					  	<a id="sitios" href="#">más..</a>
                     </article>
                 </div>
 
@@ -117,22 +119,44 @@
                     <article>
                         <h4>Subheading</h4>
                         <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-					  	<a href="#">más..</a>
+					  	<a id="" href="#">más..</a>
                     </article>
 
                     <article>
                         <h4>Subheading</h4>
                         <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-					  	<a href="#">más..</a>
+					  	<a id="" href="#">más..</a>
                     </article>
 
                     <article>
                         <h4>Subheading</h4>
                         <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-					  	<a href="#">más..</a>
+					  	<a id="" href="#">más..</a>
                     </article>
                 </div>
             </div>
+
+		  </section>
+
+
+		  <section id="ubicacion">
+
+			<article>
+			  <h4>Ubicación</h4>
+			  <p>
+				La Finca la Colina se encuentra ubicada a menos de 1 km del casco urbano del municipio de Guadalupe Santander.
+				<p>
+				  <iframe src="https://www.google.com/maps/d/u/0/embed?mid=zM66jSrh0M_c.kbHiytPPYvLQ" width="640" height="480"></iframe>
+			</article>
+
+
+		  </section>
+
+		  <section id="sitios">
+			sitios
+		  </section>
+
+
 
             <footer class="footer">
                 <p>desarrollado por <a href="http://www.cesarpachon.com">cesarpachon.com</a> 2015</p>
@@ -142,5 +166,14 @@
 
         <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+	  	<script>
+		  $("article a").on("click", function(ev){
+		  	ev.preventDefault();
+			var $el = $(this);
+			var id = $el.attr("id");
+			$("section").not("#"+id).hide(200);
+			$("section#"+id).show(200);
+		  });
+	  	</script>
     </body>
 </html>
