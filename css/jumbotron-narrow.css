@@ -4,6 +4,7 @@ body {
   padding-bottom: 20px;
 	background:url("../img/background.jpg") top right no-repeat;
 	background-attachment:fixed;
+  background-color: #002200;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -90,7 +91,17 @@ article h4{
 
 article p{
   background-color: rgba(240, 240, 216, 0.84);
-  padding: 2.0em;
+  padding: 2.0em 2.0em 0em 2.0em;
   color: #6F5846;
+  margin: 0px;
+}
+
+article a{
+  background-color: rgba(240, 240, 216, 0.84);
+  padding: 0.5em;
+  text-align: right;
+  color: #6F5846;
+  display: block;
+  margin: 0px;
 }
 
