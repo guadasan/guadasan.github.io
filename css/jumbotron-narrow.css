@@ -21,16 +21,33 @@ body {
 }
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
+	color: rgba(240, 240, 216,1.0);
+  text-shadow: 3px 3px 10px rgba(111, 88, 70, 1.0);
+
   margin-top: 0;
   margin-bottom: 0;
   line-height: 40px;
 }
 
+.header h4{
+	color: rgba(240, 240, 216,1.0);
+  text-shadow: 3px 3px 10px rgba(111, 88, 70, 1.0);
+}
+
 /* Custom page footer */
 .footer {
-  padding-top: 19px;
-  color: #777;
+	font-size: 12px;
+	background-color: rgba(111, 88, 70, 0.8);
+  padding: 10px !important;
+	text-align: right;
+	color: rgba(240, 240, 216,1.0);
   border-top: 1px solid #e5e5e5;
+}
+
+.footer a{
+	color: rgba(255, 112, 0, 1);
+	text-shadow: 1px 1px 3px rgba(111, 88, 70, 1.0);
+	text-decoration: none;
 }
 
 /* Customize container */
@@ -94,3 +111,16 @@ article p{
   color: #6F5846;
 }
 
+@media (min-width: 500px) {
+	.col-lg-6{
+	  width: 50% !important;
+  	float: left !important;
+	}
+}
+
+@media (max-width: 499px) {
+	.col-lg-6{
+	  width: 100% !important;
+  	float: none !important;
+	}
+}
