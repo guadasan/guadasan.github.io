@@ -42,6 +42,8 @@
 </div>
 -->
 
+		  <section id="inicio">
+
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
@@ -89,22 +91,38 @@
                 <div class="col-lg-6">
                     <article>
                         <h4 >Inicio</h4>
+<<<<<<< HEAD
                         <p class="content">Aléjate de las rutas principales y descubre el encanto de un lugar tranquilo.</p>
+=======
+                        <p class="content">Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+					  	<a id="inicio" href="#">más..</a>
+>>>>>>> 961aebee6f2373eeec70ce84094cedd7d3f4874c
                     </article>
 
                     <article>
                         <h4>Ubicación</h4>
+<<<<<<< HEAD
                         <p>Ubicado a 28 kms (2 horas) del municipio de Oiba (ver  más)</p>
+=======
+                        <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+					  	<a id="ubicacion" href="#">más..</a>
+>>>>>>> 961aebee6f2373eeec70ce84094cedd7d3f4874c
                     </article>
 
                     <article>
                         <h4>Sitios de interés</h4>
+<<<<<<< HEAD
                         <p>Quebradas, pozos, cuevas hacen parte de los sitios que puedes visitar (ver  más)</p>
+=======
+                        <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+					  	<a id="sitios" href="#">más..</a>
+>>>>>>> 961aebee6f2373eeec70ce84094cedd7d3f4874c
                     </article>
                 </div>
 
                 <div class="col-lg-6">
                     <article>
+<<<<<<< HEAD
                         <h4>Tarifas y condiciones</h4>
                         <p>Conoce los precios de alojamiento y  nuestros términos de servicio (ver  más).</p>
                     </article>
@@ -117,9 +135,48 @@
                     <article>
                         <h4>Contacto</h4>
                         <p>Contáctactanos vía telefónica ó por medios digitales (ver más)</p>
+=======
+                        <h4>Subheading</h4>
+                        <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+					  	<a id="" href="#">más..</a>
+                    </article>
+
+                    <article>
+                        <h4>Subheading</h4>
+                        <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+					  	<a id="" href="#">más..</a>
+                    </article>
+
+                    <article>
+                        <h4>Subheading</h4>
+                        <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+					  	<a id="" href="#">más..</a>
+>>>>>>> 961aebee6f2373eeec70ce84094cedd7d3f4874c
                     </article>
                 </div>
             </div>
+
+		  </section>
+
+
+		  <section id="ubicacion">
+
+			<article>
+			  <h4>Ubicación</h4>
+			  <p>
+				La Finca la Colina se encuentra ubicada a menos de 1 km del casco urbano del municipio de Guadalupe Santander.
+				<p>
+				  <iframe src="https://www.google.com/maps/d/u/0/embed?mid=zM66jSrh0M_c.kbHiytPPYvLQ" width="640" height="480"></iframe>
+			</article>
+
+
+		  </section>
+
+		  <section id="sitios">
+			sitios
+		  </section>
+
+
 
             <footer class="footer">
                 <p>desarrollado por <a href="http://www.cesarpachon.com">cesarpachon.com</a> 2015</p>
@@ -129,5 +186,14 @@
 
         <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+	  	<script>
+		  $("article a").on("click", function(ev){
+		  	ev.preventDefault();
+			var $el = $(this);
+			var id = $el.attr("id");
+			$("section").not("#"+id).hide(200);
+			$("section#"+id).show(200);
+		  });
+	  	</script>
     </body>
 </html>
