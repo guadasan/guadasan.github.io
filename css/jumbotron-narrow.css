@@ -1,4 +1,7 @@
-@import url(http://fonts.googleapis.com/css?family=Nixie+One);
+/*@import url(http://fonts.googleapis.com/css?family=Nixie+One);
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Lancelot);
 
 /* Space out content a bit */
 body {
@@ -19,7 +22,7 @@ body {
 
 /* Custom page header */
 .header {
-	font-family: 'Nixie One', cursive;
+	font-family: 'Lancelot', cursive;
   padding-bottom: 20px;
   border-bottom: 1px solid #e5e5e5;
 }
@@ -105,7 +108,7 @@ body {
 
 
 article h4{
-		font-family: 'Nixie One', cursive;
+		font-family: 'Lancelot', cursive;
 
 	background-color: rgba(111, 88, 70, 0.8);
   padding: 0.5em;
