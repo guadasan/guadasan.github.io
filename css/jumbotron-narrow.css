@@ -37,7 +37,8 @@ body {
 }
 
 .header h4{
-	font-weight: bold;
+	/*font-weight: bold;*/
+  font-weight: 25px;
 	color: rgba(240, 240, 216,1.0);
   text-shadow: 3px 3px 10px rgba(111, 88, 70, 1.0);
 }
