@@ -115,8 +115,11 @@ body {
   }
 }
 
-article {
+.menu_entry {
   cursor: pointer;
+}
+
+article {
   background-color: rgba(240, 240, 216, 0.84);
   color: #6F5846;
 }
