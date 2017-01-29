@@ -7,7 +7,7 @@
 body {
   padding-top: 20px;
   padding-bottom: 20px;
-	background:url("../img/background.jpg") top right no-repeat;
+	background:url("../img/background.jpg") top center no-repeat;
 	background-attachment:fixed;
   background-color: #002200;
 }
@@ -27,20 +27,28 @@ body {
   border-bottom: 1px solid #e5e5e5;
 }
 /* Make the masthead heading the same height as the navigation */
-.header h3 {
-	font-size: 50px;
+
+
+.header h1 {
 	color: rgba(240, 240, 216,1.0);
   text-shadow: 3px 3px 10px rgba(111, 88, 70, 1.0);
+	font-size: 50px;
   margin-top: 0;
   margin-bottom: 0;
   line-height: 40px;
 }
 
-.header h4{
-	/*font-weight: bold;*/
-  font-weight: 25px;
+.header h2 {
 	color: rgba(240, 240, 216,1.0);
   text-shadow: 3px 3px 10px rgba(111, 88, 70, 1.0);
+  font-weight: 30px;
+}
+
+.header h4{
+	color: rgba(240, 240, 216,1.0);
+  text-shadow: 3px 3px 10px rgba(111, 88, 70, 1.0);
+	/*font-weight: bold;*/
+  font-weight: 25px;
 }
 
 
@@ -107,10 +115,14 @@ body {
   }
 }
 
+article {
+  cursor: pointer;
+  background-color: rgba(240, 240, 216, 0.84);
+  color: #6F5846;
+}
 
 article h4{
 		font-family: 'Lancelot', cursive;
-
 	background-color: rgba(111, 88, 70, 0.8);
   padding: 0.5em;
   color: rgba(240, 240, 216, 1);
@@ -131,13 +143,19 @@ article h4 a:hover{
 
 }
 
+article h5 {
+  margin: 0;
+  padding: 20px 0 0 20px; 
+	font-family: 'Lancelot', cursive;
+  font-size: 120%; 
+  font-weight: bold; 
+}
 
 article p{
-  background-color: rgba(240, 240, 216, 0.84);
   padding: 2.0em 2.0em 0em 2.0em;
-  color: #6F5846;
   margin: 0px;
 	padding: 28px 14px;
+  line-height: 1.5; 
 }
 
 article p a{
@@ -146,6 +164,10 @@ article p a{
   text-align: right;
   color: #6F5846;
   display: block;
+}
+
+article ul li {
+  margin: 10px 0px; 
 }
 
 @media (min-width: 500px) {

@@ -1,0 +1,16 @@
+<br>    
+<footer class="footer">
+                <p>desarrollado por <a href="http://www.cesarpachon.com">cesarpachon.com</a> 2015</p>
+            </footer>
+        </div> <!-- /container -->
+
+        <script>
+            $("article").on("click", function(ev){
+                var $article = $(ev.target).closest("article");
+                console.log($article.attr("id"));
+                document.location = $article.attr("id")+".html";
+                //$article.closest(".").addClass("active");
+            });
+            </script>
+    </body>
+</html>
