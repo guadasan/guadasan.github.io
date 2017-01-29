@@ -119,6 +119,18 @@ body {
   cursor: pointer;
 }
 
+
+#image{
+border:4px #666 solid;
+height:480px;
+width:640px;}
+
+.thumb{
+float:left;
+margin-right:10px;
+margin-top:10px;}
+
+
 article {
   background-color: rgba(240, 240, 216, 0.84);
   color: #6F5846;

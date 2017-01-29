@@ -5,7 +5,7 @@
         </div> <!-- /container -->
 
         <script>
-            $("article").on("click", function(ev){
+            $(".menu_entry").on("click", function(ev){
                 var $article = $(ev.target).closest("article");
                 console.log($article.attr("id"));
                 document.location = $article.attr("id")+".html";
